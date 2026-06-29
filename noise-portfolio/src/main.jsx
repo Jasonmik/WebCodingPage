@@ -7,7 +7,7 @@ import DetailPage from "./pages/DetailPage.jsx";
 import "./styles/global.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <BrowserRouter>
+  <BrowserRouter basename="/WebCodingPage/noise-portfolio">
     <Routes>
       <Route path="/" element={<App />} />
       <Route path="/berlin" element={<BerlinPage />} />
