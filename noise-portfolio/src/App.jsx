@@ -113,9 +113,52 @@ export default function App() {
       }
     };
 
+    // 移动端触摸滑动支持
+    let touchStartY = 0;
+    let touchMoved = false;
+
+    const handleTouchStart = (e) => {
+      touchStartY = e.touches[0].clientY;
+      touchMoved = false;
+    };
+
+    const handleTouchMove = (e) => {
+      if (isTransitioning.current) return;
+      touchMoved = true;
+    };
+
+    const handleTouchEnd = (e) => {
+      if (!touchMoved) return;
+      const now = Date.now();
+
+      if (
+        isTransitioning.current ||
+        now - lastScrollTime.current < SCROLL_COOLDOWN
+      ) {
+        return;
+      }
+
+      const deltaY = touchStartY - e.changedTouches[0].clientY;
+
+      if (Math.abs(deltaY) > SCROLL_THRESHOLD) {
+        lastScrollTime.current = now;
+        if (deltaY > 0) {
+          goNext();
+        } else {
+          goPrev();
+        }
+      }
+    };
+
     window.addEventListener("wheel", handleWheel, { passive: true });
+    window.addEventListener("touchstart", handleTouchStart, { passive: true });
+    window.addEventListener("touchmove", handleTouchMove, { passive: true });
+    window.addEventListener("touchend", handleTouchEnd, { passive: true });
     return () => {
       window.removeEventListener("wheel", handleWheel);
+      window.removeEventListener("touchstart", handleTouchStart);
+      window.removeEventListener("touchmove", handleTouchMove);
+      window.removeEventListener("touchend", handleTouchEnd);
     };
   }, []);
 
