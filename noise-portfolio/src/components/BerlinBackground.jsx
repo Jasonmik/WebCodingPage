@@ -11,10 +11,10 @@ const BerlinBackground = () => {
 
   // 数据源
   const TEXT_DATA = [
-    { title: "illustration\ndesign", no: "N. 01", year: "Y. 2026" },
-    { title: "unisve\ncrafts", no: "N. 02", year: "Y. 2026" },
-    { title: "airbag\nstudio", no: "N. 03", year: "Y. 2025" },
-    { title: "darko\nbratina", no: "N. 04", year: "Y. 2020" },
+    { title: "react\nvue", no: "N. 01", year: "Y. 2026" },
+    { title: "nodejs\nthreejs", no: "N. 02", year: "Y. 2026" },
+    { title: "tailwind\ncss", no: "N. 03", year: "Y. 2025" },
+    { title: "frontend\ndev", no: "N. 04", year: "Y. 2020" },
   ];
 
   const IMG_URLS = [

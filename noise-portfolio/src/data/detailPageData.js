@@ -1,12 +1,12 @@
 // DetailPage 数据配置
 export const DETAIL_PAGE_DATA = {
   page01: {
-    title: ["illustration", "design"],
-    description: "专注于视觉叙事和品牌标识设计。",
+    title: ["projects", "showcase"],
+    description: "精选前端项目展示，注重用户体验与视觉表现力。",
     projectNumber: "01",
     totalProjects: "03",
-    role: "视觉设计师",
-    agency: "个人工作室",
+    role: "前端开发",
+    agency: "个人开发者",
     year: "2026",
     awards: "-",
     portrait: {
@@ -30,11 +30,11 @@ export const DETAIL_PAGE_DATA = {
   },
   page02: {
     title: ["portfolio", "2026"],
-    description: "个人作品集",
+    description: "前端个人作品集，持续迭代中。",
     projectNumber: "02",
     totalProjects: "03",
-    role: "全栈开发/UI 设计师",
-    agency: "个人工作室",
+    role: "前端工程师",
+    agency: "个人开发者",
     year: "2026",
     awards: "FWA OF THE DAY",
     cards: [
@@ -59,12 +59,12 @@ export const DETAIL_PAGE_DATA = {
     ],
   },
   page03: {
-    title: ["photography", "gallery"],
-    description: "摄影爱好者",
+    title: ["tech", "stack"],
+    description: "热爱技术，不断探索前端新领域。",
     projectNumber: "03",
     totalProjects: "03",
-    role: "摄影师",
-    agency: "个人工作室",
+    role: "全栈学习者",
+    agency: "开源贡献者",
     year: "2025",
     awards: "-",
     cards: [

@@ -13,13 +13,13 @@ export default function Page03() {
               fontSize: "clamp(3rem, 10vw, 9.5rem)",
             }}
           >
-            Photography
+            Tech
           </div>
 
           <div className="absolute right-4 md:right-20 top-0 md:top-0 text-[10px] tracking-widest uppercase text-stone-700 font-medium leading-relaxed">
-            原作者
+            技术栈
             <br />
-            The WanderingSoul
+            工具箱
           </div>
 
           <div
@@ -29,13 +29,13 @@ export default function Page03() {
               fontSize: "clamp(3rem, 10vw, 9.5rem)",
             }}
           >
-            Gallery
+            Stack
           </div>
         </div>
 
         <div className="w-full max-w-2xl mt-12 flex flex-col sm:flex-row justify-between items-start sm:items-center px-4 space-y-6 sm:space-y-0">
           <p className="text-xs sm:text-sm text-stone-800 max-w-xs leading-relaxed font-normal">
-            所有项目素材来源于互联网，版权归原作者所有，只是为了填充此次展示的内容，没有用于商业。
+            掌握的前端技术与工具链：React、Vue、Node.js、Three.js、Tailwind CSS 等，持续学习中。
           </p>
           <Link
             to="/detail/page03"
